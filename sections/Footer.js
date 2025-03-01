@@ -18,7 +18,7 @@ const Footer = () => {
   return (
     <>
     
-    <footer className=" relative overflow-hidden text-white p-10 "  style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${footerBg.src})`,backgroundSize: "cover", backgroundRepeat: "no-repeat", }} >
+    <footer className=" relative overflow-hidden text-white p-10 bg-[#86b76e] "   >
       <div className="max-w-7xl mx-auto  grid md:grid-cols-4 gap-4 text-center md:text-left">
         {/* Logo & Intro */}
         <div className="ml flex flex-col  items-center justify-center">
