@@ -9,7 +9,8 @@ import Logo from "@/assets/icons/thinLogo.png"
 import Play from "@/assets/icons/playStore.png"
 import Apple from "@/assets/icons/appStore.png"
 // import Rx from "@/assets/images/rxGold.svg"
-import footerBg from "@/assets/images/footerBg.png";
+import footerBg from "@/assets/images/footerBg3.png";
+import footerBg1 from "@/assets/images/footerBg31.png";
 
 // import { Karla } from "next/font/google";
 
@@ -18,8 +19,13 @@ const Footer = () => {
   return (
     <>
     
-    <footer className=" relative overflow-hidden text-white p-10 bg-[#86b76e] "   >
-      <div className="max-w-7xl mx-auto  grid md:grid-cols-4 gap-4 text-center md:text-left">
+    <footer className=" relative overflow-hidden text-black p-10 bg-[#5e9547] "   style={{
+    backgroundImage: `url(${window.innerWidth < 768 ? footerBg1.src : footerBg.src})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>  
+      <div className="max-w-7xl mx-auto  grid md:grid-cols-4 gap-2 text-center md:text-left">
         {/* Logo & Intro */}
         <div className="ml flex flex-col  items-center justify-center">
           <Image  src={Logo} alt="back" width={200} height={10} className=""/>
@@ -66,7 +72,7 @@ const Footer = () => {
 
         {/* Social Media */}
         <div className="">
-          <h3 className="text-3xl font-zain font-bold text-white">“Simplifying Health Goals by advice on Healthy 'Food and Lifestyle”</h3>
+          <h3 className="text-3xl lg:relative lg:-left-19 lg:top-10 font-zain font-bold text-black">“Simplifying Health Goals by advice on Healthy 'Food and Lifestyle”</h3>
           
         </div>
       </div>

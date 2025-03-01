@@ -4,7 +4,8 @@ import { useState, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import HeroBg from "@/assets/images/heroPhone.jpg"
+import HeroBg from "@/assets/images/heroBg4.jpg"
+import LandingArrow from "@/assets/icons/arrow.jpg"
 
 const keywords = [
     { title: "physical well-being." },
@@ -50,25 +51,37 @@ const LandingPage = () => {
     return (
         <div className='flex flex-col '>
             <Navbar />
-            <div className='relative min-h-[90vh] md:min-h-[70vh]  lg:min-h-screen text-white  w-full' style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${HeroBg.src})`,backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
+            <div className='relative min-h-[90vh] md:min-h-[70vh]  lg:min-h-screen text-black  w-full' style={{ backgroundImage: ` url(${HeroBg.src})`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
                 <section className=" text-center xs:text-left lg:text-left xs:px-3 lg:px-10  mt-10  py-32 relative z-10">
-                    <h1 className="font-extrabold  xs:text-5xl md:text-6xl font-zain text-white">
-                    Simplifying<br/> Health Goals by <br/> Offering Healthy Food for you
+                    <h1 className="font-extrabold  xs:text-5xl md:text-6xl font-zain text-black">
+                        Simplifying<br /> Health Goals by <br /> Offering Healthy Food for you
                     </h1>
-                    <h2 className="mb-4 mr-5 md:text-[1.3rem] font-karla font-bold">
-                    "Health is not just the absence of disease, <br/>but a state of complete{" "}
+                    <h2 className="mb-4 mr-5 md:text-[1.3rem] whitespace-nowrap font-karla font-bold">
+                        "Health is not just the absence of disease, <br />but a state of complete{" "}
                         <motion.span
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                             transition={{ duration: 0.2 }}
-                            className="bg-clip-text md:text-xl font-extrabold text-[#095111] "
+                            className="bg-clip-text md:text-xl font-extrabold text-[#5ab00a] "
                         >
                             {text}
                         </motion.span>
                     </h2>
-                    <h3 className="font-light text-[#095111]">-World Health Organization</h3>
+                    <h3 className="font-light text-[#5ab00a]">-World Health Organization</h3>
+                    <div className="flex flex-row z-10 mt-6">
+                    <div className="xs:px-4 md:px-10 py-3 text-center text-xl bg-[#6de0019f] cursor-pointer uppercase text-black font-medium rounded-lg font-zain  shadow-lg">
+                        Foodcription
+                    </div>
+                    <div className="flex w-full relative">
+                        <Image src={LandingArrow} alt="arrow" width={50} height={50} className="w-20" />
+                        <span className="xs:text-xs text-[#5ab00a] md:text-xs font-semibold absolute bottom-0 xs:left-7 xs:top-11 md:top-12 xl:left-10">
+                            Click here to get your own
+                        </span>
+                    </div>
+                </div>
                 </section>
+                
 
                 {/* SVG Curved Shape */}
                 <div className="absolute bottom-0 w-full">
