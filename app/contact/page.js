@@ -10,7 +10,7 @@ import { useState } from "react";
 import Link from 'next/link'
 import Image from 'next/image'
 import footerBg from "@/assets/images/Contact14.png";
-import contactBg from "@/assets/images/contactBg3.jpg";
+// import contactBg from "@/assets/images/contactBg3.jpg";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
