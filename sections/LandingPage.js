@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import HeroBg from "@/assets/images/heroBg4.jpg"
+import HeroBg from "@/assets/images/heroBg7.jpg"
 
 const keywords = [
     { title: "physical well-being." },
@@ -62,7 +62,7 @@ const LandingPage = () => {
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                             transition={{ duration: 0.2 }}
-                            className="bg-clip-text text-xl font-extrabold text-[#095111] "
+                            className="bg-clip-text md:text-xl font-extrabold text-[#095111] "
                         >
                             {text}
                         </motion.span>

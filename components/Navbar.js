@@ -1,14 +1,14 @@
 import React from "react";
-import Logo from "@/assets/icons/logo.png"
+import Logo from "@/assets/icons/thinLogo.png"
 import Image from "next/image";
 import Link from "next/link";
 export default function Navbar() {
 
     return (
-        <div className=" flex items-center xs:mx-0 lg:mx-10  z-100 text-[#095111] relative">
+        <div className=" flex items-center  lg:mx-10  z-100 text-[#095111] relative">
             {/* Navbar */}
-            <div className="absolute xs:px-16   md:px-8 bg-white  xs:top-3 md:top-10 mb-20 md:w-full xs:w-[100vw]">
-                <header className=" flex xs:flex-col  md:h-16 md:gap-10 lg:gap-0  md:flex-row justify-between items-center">
+            <div className="absolute xs:px-16   md:px-8 md:bg-white  xs:top-5 md:top-10 mb-20 md:w-full xs:w-[100vw]">
+                <header className=" flex xs:flex-col  md:h-16 xs:gap-2 md:gap-10 lg:gap-0  md:flex-row justify-between items-center">
                     <div className=""><h1 className="items-center  flex justify-center "><Image src={Logo} alt="FoodCription" width={200} height={200} className=" "/></h1></div>
                     <div className="flex    xs:gap-7 md:gap-20 xs:text-[0.9rem] md:text-lg font-karla font-bold">
                         <Link href="#" className="whitespace-nowrap">About Us</Link>
