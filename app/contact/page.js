@@ -94,7 +94,7 @@ const ContactPage = () => {
       <Navbar />
 
       <div className="min-h-screen flex justify-center items-center bg-gradient-to-b from-lime-600 to-emerald-600   p-4" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${footerBg.src})`,backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
-        <div className="w-full sm:mt-[10rem] xs:mt-[10rem] lg:mt-[8rem] max-w-4xl flex-col-reverse  backdrop-blur-xl  text-white rounded-lg shadow-xl p-6 md:p-10 flex md:flex-row" >
+        <div className="w-full sm:mt-[10rem] xs:mt-[10rem] lg:mt-[8rem] max-w-4xl flex-col-reverse bg-[#304d23]  text-white rounded-lg shadow-xl p-6 md:p-10 flex md:flex-row" >
           <div className="w-full md:w-2/3">
             <h2 className="text-2xl font-bold text-white">Contact Us</h2>
             <p className="text-gray-300 mb-6">Consultation</p>
@@ -171,7 +171,7 @@ const ContactPage = () => {
           </div>
 
           <div className="w-full md:w-1/3 xs:mt-8 md:mt-0 md:ml-8 text-gray-200">
-            <h2 className="text-lg font-bold text-white">“Simplifying Health Goals by advice on Healthy 'Food and Lifestyle”</h2>
+            <h2 className="text-lg font-bold text-white">“Simplifying Health Goals by Offering Healthy Food for you”</h2>
             <h2 className="text-lg xs:hidden md:flex font-bold text-white mt-6">Contact Information</h2>
             <p className="mt-2 hover:text-white">Call Us: +91 97196 71243</p>
             <div className="flex gap-4 mt-2">
