@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 // import { motion } from 'framer-motion';
 // import Scooter from "@/assets/images/footer-scooter.svg"
-import Logo from "@/assets/icons/logo.png"
+import Logo from "@/assets/icons/thinLogo.png"
 import Play from "@/assets/icons/playStore.png"
 import Apple from "@/assets/icons/appStore.png"
 // import Rx from "@/assets/images/rxGold.svg"
@@ -39,7 +39,7 @@ const Footer = () => {
 
         {/* Quick Links */}
         <div className="lg:ml-[4rem]">
-          <h3 className="text-2xl  font-zain   text-gray-600">Quick Links</h3>
+          <h3 className="text-2xl  font-zain   text-green-800">Quick Links</h3>
           <ul className="mt-2 space-y-2">
             <li><Link href="#" className="hover:text-green-800">Home</Link></li>
             <li><Link href="#" className="hover:text-green-800">About Us</Link></li>
@@ -52,7 +52,7 @@ const Footer = () => {
 
         {/* Quick Links */}
         <div className="lg:ml-[3rem]">
-          <h3 className="text-2xl  font-zain text-gray-600">More</h3>
+          <h3 className="text-2xl  font-zain text-green-800">More</h3>
           <ul className="mt-2 space-y-2">
             <li><Link href="#" className="hover:text-green-800">Privacy Policy</Link></li>
             <li><Link href="#" className="hover:text-green-800">Help</Link></li>
