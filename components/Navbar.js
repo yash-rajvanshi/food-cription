@@ -7,11 +7,11 @@ export default function Navbar() {
     return (
         <div className="bg-transparent z-100 text-white relative">
             {/* Navbar */}
-            <div className="absolute px-10 top-0 mb-20 w-full">
-                <header className=" flex justify-between items-center p-4">
-                    <h1 className="text-xl font-bold"><Image src={Logo} alt="FoodCription" width={200} height={200} /></h1>
-                    <div className="flex gap-20 font-karla font-bold">
-                        <Link href="#">About Us</Link>
+            <div className="absolute xs:px-16  md:px-10 top-0 mb-20 w-full">
+                <header className=" flex xs:flex-col md:gap-10 lg:gap-0  md:flex-row justify-between items-center p-4">
+                    <h1 className="text-xl font-bold"><Image src={Logo} alt="FoodCription" width={200} height={200} className=" "/></h1>
+                    <div className="flex xs:gap-8 md:gap-20 xs:text-[0.9rem] md:text-lg font-karla font-bold">
+                        <Link href="#" className="whitespace-nowrap">About Us</Link>
                         <Link href="#">Blogs</Link>
                         <Link href="#">Orders</Link>
                         <Link href="#">Consultation</Link>

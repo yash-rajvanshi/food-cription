@@ -6,9 +6,9 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const keywords = [
-    { title: "the care of the human frame." },
-    { title: "the Diet." },
-    { title: "the cause and prevention of disease." }
+    { title: "physical well-being." },
+    { title: "mental well-being." },
+    { title: "social well-being." }
 ];
 
 const LandingPage = () => {
@@ -49,14 +49,14 @@ const LandingPage = () => {
     return (
         <div className='flex flex-col '>
             <Navbar />
-            <div className='relative  min-h-screen  text-white  bg-[url("/heroBg.png")] bg-cover bg-center w-full'>
+            <div className='relative min-h-[80vh] md:min-h-[70vh]  lg:min-h-screen text-white  bg-[url("/heroBg.png")] bg-cover bg-center w-full'>
                 <div className="absolute inset-0 bg-teal-800/30 z-0"></div>
-                <section className=" text-center  py-32 relative z-10">
-                    <h1 className="font-extrabold xs:text-5xl md:text-6xl font-zain text-white">
-                        Free <br /> Customized Lifestyle <br /> Prescription Plan!
+                <section className=" text-center xs:text-left md:text-center xs:px-3 lg:px-0  mt-10  py-32 relative z-10">
+                    <h1 className="font-extrabold  xs:text-5xl md:text-6xl font-zain text-white">
+                    Transform <br/> Your Lifestyle with <br/> Personalized Health Guide! 
                     </h1>
-                    <h2 className="mb-4 mr-5 md:text-[1rem]  font-karla font-bold">
-                        “The Doctor of the future will give no medicine,<br/> but will instruct his patient in{" "}
+                    <h2 className="mb-4 mr-5 md:text-[1rem] font-karla font-bold">
+                    "Health is not just the absence of disease, <br/>but a state of complete{" "}
                         <motion.span
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
@@ -67,6 +67,7 @@ const LandingPage = () => {
                             {text}
                         </motion.span>
                     </h2>
+                    <h3 className="font-light text-black">-World Health Organization</h3>
                 </section>
 
                 {/* SVG Curved Shape */}
