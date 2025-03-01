@@ -3,12 +3,13 @@ import React from "react";
 import Image from "next/image";
 // import { FaFacebook, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 // import Scooter from "@/assets/images/footer-scooter.svg"
 import Logo from "@/assets/icons/logo.png"
 import Play from "@/assets/icons/playStore.png"
 import Apple from "@/assets/icons/appStore.png"
 // import Rx from "@/assets/images/rxGold.svg"
+import footerBg from "@/assets/images/footerBg.png";
 
 // import { Karla } from "next/font/google";
 
@@ -17,27 +18,28 @@ const Footer = () => {
   return (
     <>
     
-    <footer className=" relative overflow-hidden text-black p-10" style={{ backgroundImage: "url('/footerBg.svg')" }} >
+    <footer className=" relative overflow-hidden text-white p-10" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${footerBg.src})`,backgroundSize: "cover", backgroundRepeat: "no-repeat" }} >
       <div className="max-w-7xl mx-auto  grid md:grid-cols-4 gap-4 text-center md:text-left">
         {/* Logo & Intro */}
         <div className="ml-5">
           <Image  src={Logo} alt="back" width={300} height={30}/>
-          <p className="text-sm  lg:text-justify mt-2">
+          <p className="xs:text-xl  lg:text-justify mt-2 font-zain">
           A Healthcare Community that offers FoodCription (Lifestyle Prescription) to help individuals achieve their Health Goals by collaborating with leading Industry Partners.
           </p>
-          <div className="flex md:mt-6 md:h-25 items-center">
-            <div className="flex justify-between  " >
-                <Image  src={Play} alt="back" width={50} height={50} className="mb-2"/>
-                <Image  src={Apple} alt="back" width={30} height={10}/>
+          <div className="flex md:mt-6 md:h-25 gap-2 mt-4 justify-center items-center">
+            <div >
+                <Image  src={Play} alt="back" width={50} height={50} />
+                
             </div>
-            {/* <div className="ml-3 "><Image  src={Rx} alt="back" width={70} height={30}/></div> */}
-
+            <div >
+                <Image  src={Apple} alt="back" width={50} height={50}/>
+            </div>
           </div>
         </div>
 
         {/* Quick Links */}
         <div className="lg:ml-[4rem]">
-          <h3 className="text-2xl  font-zain   text-black">Quick Links</h3>
+          <h3 className="text-2xl  font-zain   text-gray-600">Quick Links</h3>
           <ul className="mt-2 space-y-2">
             <li><Link href="#" className="hover:text-green-800">Home</Link></li>
             <li><Link href="#" className="hover:text-green-800">About Us</Link></li>
@@ -51,7 +53,7 @@ const Footer = () => {
 
         {/* Quick Links */}
         <div className="lg:ml-[3rem]">
-          <h3 className="text-2xl  font-zain text-black">More</h3>
+          <h3 className="text-2xl  font-zain text-gray-600">More</h3>
           <ul className="mt-2 space-y-2">
             <li><Link href="#" className="hover:text-green-800">Privacy Policy</Link></li>
             <li><Link href="#" className="hover:text-green-800">Help</Link></li>
@@ -65,7 +67,7 @@ const Footer = () => {
 
         {/* Social Media */}
         <div className="">
-          <h3 className="text-3xl font-zain font-bold text-black">“Simplifying Health Goals by advice on Healthy 'Food and Lifestyle”</h3>
+          <h3 className="text-3xl font-zain font-bold text-white">“Simplifying Health Goals by advice on Healthy 'Food and Lifestyle”</h3>
           
         </div>
       </div>
