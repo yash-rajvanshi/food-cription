@@ -1,10 +1,10 @@
 import React from 'react'
-import Navbar from '@/components/Navbar'
 import Footer from '@/sections/Footer'
+import LandingPage from '@/sections/LandingPage'
 const HomePage = () => {
   return (
     <div>
-      <Navbar/>
+      <LandingPage/>
       <Footer/>
     </div>
   )
