@@ -5,9 +5,9 @@ import Link from "next/link";
 export default function Navbar() {
 
     return (
-        <div className="bg-transparent z-100 text-white relative">
+        <div className="bg-white flex items-center  z-100 text-black relative">
             {/* Navbar */}
-            <div className="absolute xs:px-16  md:px-10 top-0 mb-20 w-full">
+            <div className="absolute xs:px-16 bg-white md:px-8 top-3 mb-20 w-full">
                 <header className=" flex xs:flex-col md:gap-10 lg:gap-0  md:flex-row justify-between items-center p-4">
                     <h1 className="text-xl font-bold"><Image src={Logo} alt="FoodCription" width={200} height={200} className=" "/></h1>
                     <div className="flex xs:gap-8 md:gap-20 xs:text-[0.9rem] md:text-lg font-karla font-bold">
