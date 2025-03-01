@@ -18,21 +18,21 @@ const Footer = () => {
   return (
     <>
     
-    <footer className=" relative overflow-hidden text-white p-10" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${footerBg.src})`,backgroundSize: "cover", backgroundRepeat: "no-repeat" }} >
+    <footer className=" relative overflow-hidden text-white p-10 "  style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${footerBg.src})`,backgroundSize: "cover", backgroundRepeat: "no-repeat", }} >
       <div className="max-w-7xl mx-auto  grid md:grid-cols-4 gap-4 text-center md:text-left">
         {/* Logo & Intro */}
-        <div className="ml-5">
-          <Image  src={Logo} alt="back" width={300} height={30}/>
+        <div className="ml flex flex-col  items-center justify-center">
+          <Image  src={Logo} alt="back" width={200} height={10} className=""/>
           <p className="xs:text-xl  lg:text-justify mt-2 font-zain">
           A Healthcare Community that offers FoodCription (Lifestyle Prescription) to help individuals achieve their Health Goals by collaborating with leading Industry Partners.
           </p>
-          <div className="flex md:mt-6 md:h-25 gap-2 mt-4 justify-center items-center">
-            <div >
-                <Image  src={Play} alt="back" width={50} height={50} />
+          <div className="flex md:mt-0 md:h-25 gap-2 mt-4 justify-center items-center">
+            <div className="hover:scale-110 transition-transform duration-300" >
+                <Image  src={Play} alt="back" width={40} height={40} />
                 
             </div>
-            <div >
-                <Image  src={Apple} alt="back" width={50} height={50}/>
+            <div className="hover:scale-110 transition-transform duration-300">
+                <Image  src={Apple} alt="back" width={40} height={40}/>
             </div>
           </div>
         </div>
@@ -43,10 +43,9 @@ const Footer = () => {
           <ul className="mt-2 space-y-2">
             <li><Link href="#" className="hover:text-green-800">Home</Link></li>
             <li><Link href="#" className="hover:text-green-800">About Us</Link></li>
-            <li><Link href="#" className="hover:text-green-800">Partnership / Affiliate Program</Link></li>
             <li><Link href="#" className="hover:text-green-800">Blog</Link></li>
             <li><Link href="#" className="hover:text-green-800">Order</Link></li>
-            <li><Link href="#" className="hover:text-green-800">Consultation / Diagnostic Tests</Link></li>
+            <li><Link href="#" className="hover:text-green-800">Consultation</Link></li>
             <li><Link href="#" className="hover:text-green-800">Medical Tourism</Link></li>
           </ul>
         </div>

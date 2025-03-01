@@ -9,6 +9,8 @@ import { useState } from "react";
 // import Facebook from "@/assets/icons/image.png"
 import Link from 'next/link'
 import Image from 'next/image'
+import footerBg from "@/assets/images/heroBg2.jpg";
+import contactBg from "@/assets/images/contactBg3.jpg";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -91,11 +93,11 @@ const ContactPage = () => {
       {/* <Updates /> */}
       <Navbar />
 
-      <div className="min-h-screen flex justify-center items-center bg-gradient-to-b from-slate-500 to-stone-500 p-4">
-        <div className="w-full sm:mt-[10rem] xs:mt-[10rem] lg:mt-[8rem] max-w-4xl bg-gradient-to-br from-gray-900 to-gray-800 text-white rounded-lg shadow-xl p-6 md:p-10 flex flex-col md:flex-row">
+      <div className="min-h-screen flex justify-center items-center bg-gradient-to-b from-lime-600 to-emerald-600   p-4" style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${footerBg.src})`,backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
+        <div className="w-full sm:mt-[10rem] xs:mt-[10rem] lg:mt-[8rem] max-w-4xl flex-col-reverse  backdrop-blur-xl  text-white rounded-lg shadow-xl p-6 md:p-10 flex md:flex-row" >
           <div className="w-full md:w-2/3">
-            <h2 className="text-2xl font-bold text-[#5E9538]">Contact Us</h2>
-            <p className="text-gray-300 mb-6">How can we help?</p>
+            <h2 className="text-2xl font-bold text-white">Contact Us</h2>
+            <p className="text-gray-300 mb-6">Consultation</p>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
@@ -105,7 +107,7 @@ const ContactPage = () => {
                     placeholder="First Name"
                     value={formData.firstName}
                     onChange={handleChange}
-                    className="w-full p-2 rounded bg-gray-700 border border-gray-600 focus:border-[#5E9538] focus:outline-none"
+                    className="w-full p-2 rounded  backdrop-blur-sm border border-gray-300 focus:border-[#5E9538] focus:outline-none"
                   />
                   {errors.firstName && <p className="text-red-500 text-sm">{errors.firstName}</p>}
                 </div>
@@ -116,7 +118,7 @@ const ContactPage = () => {
                     placeholder="Last Name"
                     value={formData.lastName}
                     onChange={handleChange}
-                    className="w-full p-2 rounded bg-gray-700 border border-gray-600 focus:border-[#5E9538] focus:outline-none"
+                    className="w-full p-2 rounded backdrop-blur-sm border border-gray-300 focus:border-[#5E9538] focus:outline-none"
                   />
                   {errors.lastName && <p className="text-red-500 text-sm">{errors.lastName}</p>}
                 </div>
@@ -129,7 +131,7 @@ const ContactPage = () => {
                     placeholder="Email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full p-2 rounded bg-gray-700 border border-gray-600 focus:border-[#5E9538] focus:outline-none"
+                    className="w-full p-2 rounded backdrop-blur-sm border border-gray-300 focus:border-[#5E9538] focus:outline-none"
                   />
                   {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
                 </div>
@@ -140,7 +142,7 @@ const ContactPage = () => {
                     placeholder="Phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full p-2 rounded bg-gray-700 border border-gray-600 focus:border-[#5E9538] focus:outline-none"
+                    className="w-full p-2 rounded backdrop-blur-sm border border-gray-300 focus:border-[#5E9538] focus:outline-none"
                   />
                   {errors.phone && <p className="text-red-500 text-sm">{errors.phone}</p>}
                 </div>
@@ -151,7 +153,7 @@ const ContactPage = () => {
                   placeholder="inquiry"
                   value={formData.inquiry}
                   onChange={handleChange}
-                  className="w-full p-2 rounded bg-gray-700 border border-gray-600 focus:border-[#5E9538] focus:outline-none"
+                  className="w-full p-2 rounded backdrop-blur-sm border border-gray-300 focus:border-[#5E9538] focus:outline-none"
                   rows="4"
                 />
                 {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
@@ -168,12 +170,10 @@ const ContactPage = () => {
             </form>
           </div>
 
-          <div className="w-full md:w-1/3 mt-8 md:mt-[4.6rem] md:ml-8 text-gray-300">
-            <h2 className="text-lg font-bold text-[#5E9538]">Contact Information</h2>
-            <p className="mt-2">Vill: Post Madanpura, Talhapur at Jasmour-Biharigarh Road, UP-247129</p>
-            <p className="mt-2">Call Us: +91 97196 71243 | +91 97198 00456</p>
-            <p className="mt-2">Monday - Saturday, 08:00 AM - 05:00 PM</p>
-            <h2 className="text-lg font-bold text-[#5E9538] mt-6">Follow Us</h2>
+          <div className="w-full md:w-1/3 xs:mt-8 md:mt-0 md:ml-8 text-gray-200">
+            <h2 className="text-lg font-bold text-white">“Simplifying Health Goals by advice on Healthy 'Food and Lifestyle”</h2>
+            <h2 className="text-lg xs:hidden md:flex font-bold text-white mt-6">Contact Information</h2>
+            <p className="mt-2 hover:text-white">Call Us: +91 97196 71243</p>
             <div className="flex gap-4 mt-2">
               <div className='uppercase sm:text-xs gap-4 flex'>
                 {/* <Link href="mailto:greenheavenacademy2011@gmail.com"><Image src={Email} alt='email' width={30} height={30} /></Link>
