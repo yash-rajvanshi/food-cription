@@ -9,7 +9,7 @@ import { useState } from "react";
 // import Facebook from "@/assets/icons/image.png"
 import Link from 'next/link'
 import Image from 'next/image'
-import footerBg from "@/assets/images/Contact14.png";
+import footerBg from "@/assets/images/heroBg3.png";
 // import contactBg from "@/assets/images/contactBg3.jpg";
 
 const ContactPage = () => {
