@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import HeroBg from "@/assets/images/heroBg4.jpg"
 
 const keywords = [
     { title: "physical well-being." },
@@ -48,12 +49,12 @@ const LandingPage = () => {
 
     return (
         <div className='flex flex-col '>
-            <Navbar />
-            <div className='relative min-h-[80vh] md:min-h-[70vh]  lg:min-h-screen text-white  bg-[url("/heroBg.png")] bg-cover bg-center w-full'>
-                <div className="absolute inset-0 bg-teal-800/30 z-0"></div>
+            {/* <Navbar /> */}
+            <div className='relative min-h-[80vh] md:min-h-[70vh]  lg:min-h-screen text-white  w-full' style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${HeroBg.src})`,backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
+                {/* <div className="absolute inset-0 bg-teal-800/30 z-0"></div> */}
                 <section className=" text-center xs:text-left md:text-center xs:px-3 lg:px-0  mt-10  py-32 relative z-10">
                     <h1 className="font-extrabold  xs:text-5xl md:text-6xl font-zain text-white">
-                    Transform <br/> Your Lifestyle with <br/> Personalized Health Guide! 
+                    "Simplifying Health Goals by <br/> Offering Healthy Food for you”
                     </h1>
                     <h2 className="mb-4 mr-5 md:text-[1rem] font-karla font-bold">
                     "Health is not just the absence of disease, <br/>but a state of complete{" "}
