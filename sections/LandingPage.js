@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import HeroBg from "@/assets/images/heroBg7.jpg"
+import HeroBg from "@/assets/images/heroPhone.jpg"
 
 const keywords = [
     { title: "physical well-being." },
