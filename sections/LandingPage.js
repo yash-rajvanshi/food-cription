@@ -49,26 +49,26 @@ const LandingPage = () => {
 
     return (
         <div className='flex flex-col '>
-            {/* <Navbar /> */}
+            <Navbar />
             <div className='relative min-h-[80vh] md:min-h-[70vh]  lg:min-h-screen text-white  w-full' style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${HeroBg.src})`,backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
-                {/* <div className="absolute inset-0 bg-teal-800/30 z-0"></div> */}
-                <section className=" text-center xs:text-left md:text-center xs:px-3 lg:px-0  mt-10  py-32 relative z-10">
+                <div className="absolute inset-0 bg-teal-800/30 z-0"></div>
+                <section className=" text-center xs:text-left lg:text-left xs:px-3 lg:px-10  mt-10  py-32 relative z-10">
                     <h1 className="font-extrabold  xs:text-5xl md:text-6xl font-zain text-white">
-                    "Simplifying Health Goals by <br/> Offering Healthy Food for you”
+                    Simplifying<br/> Health Goals by <br/> Offering Healthy Food for you
                     </h1>
-                    <h2 className="mb-4 mr-5 md:text-[1rem] font-karla font-bold">
+                    <h2 className="mb-4 mr-5 md:text-[1.3rem] font-karla font-bold">
                     "Health is not just the absence of disease, <br/>but a state of complete{" "}
                         <motion.span
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             exit={{ opacity: 0 }}
                             transition={{ duration: 0.2 }}
-                            className="bg-clip-text text-lg font-bold text-black "
+                            className="bg-clip-text text-xl font-extrabold text-[#095111] "
                         >
                             {text}
                         </motion.span>
                     </h2>
-                    <h3 className="font-light text-black">-World Health Organization</h3>
+                    <h3 className="font-light text-[#095111]">-World Health Organization</h3>
                 </section>
 
                 {/* SVG Curved Shape */}
