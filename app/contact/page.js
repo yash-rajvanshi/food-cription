@@ -173,7 +173,7 @@ const ContactPage = () => {
           <div className="w-full md:w-1/3 xs:mt-8 md:mt-0 md:ml-8 text-black">
             <h2 className="text-lg font-bold text-black">“Simplifying Health Goals by Offering Healthy Food for you”</h2>
             <h2 className="text-lg xs:hidden md:flex font-bold text-black mt-6">Contact Information</h2>
-            <p className="mt-2 hover:text-black">Call Us: +91 97196 71243</p>
+            <p className="mt-2 hover:text-black">Call Us: +91 97196-71243</p>
             <div className="flex gap-4 mt-2">
               <div className='uppercase sm:text-xs gap-4 flex'>
                 {/* <Link href="mailto:greenheavenacademy2011@gmail.com"><Image src={Email} alt='email' width={30} height={30} /></Link>
