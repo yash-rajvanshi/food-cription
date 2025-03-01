@@ -9,7 +9,7 @@ import { useState } from "react";
 // import Facebook from "@/assets/icons/image.png"
 import Link from 'next/link'
 import Image from 'next/image'
-import footerBg from "@/assets/images/heroBg3.png";
+import footerBg from "@/assets/images/Contact14.png";
 import contactBg from "@/assets/images/contactBg3.jpg";
 
 const ContactPage = () => {
@@ -93,7 +93,7 @@ const ContactPage = () => {
       {/* <Updates /> */}
       <Navbar />
 
-      <div className="min-h-screen flex justify-center items-center bg-gradient-to-b from-lime-600 to-emerald-600   p-4" style={{ backgroundImage: `url(${footerBg.src})`,backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
+      <div className="min-h-screen mb-16 flex justify-center items-center bg-gradient-to-b from-lime-600 to-emerald-600   p-4" style={{ backgroundImage: `url(${footerBg.src})`,backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
         <div className="w-full sm:mt-[10rem] xs:mt-[10rem] lg:mt-[8rem] max-w-4xl flex-col-reverse backdrop-blur-2xl bg-white/60  text-black rounded-lg shadow-[0px_0px_6px_3px_rgba(0,_0,_0,_0.1)] p-6 md:p-10 flex md:flex-row" >
           <div className="w-full md:w-2/3">
             <h2 className="text-2xl font-bold text-black">Contact Us</h2>

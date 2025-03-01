@@ -9,8 +9,8 @@ import Logo from "@/assets/icons/thinLogo.png"
 import Play from "@/assets/icons/playStore.png"
 import Apple from "@/assets/icons/appStore.png"
 // import Rx from "@/assets/images/rxGold.svg"
-import footerBg from "@/assets/images/footerBg3.png";
-import footerBg1 from "@/assets/images/footerBg31.png";
+// import footerBg from "@/assets/images/footerBg3.png";
+// import footerBg1 from "@/assets/images/footerBg31.png";
 
 // import { Karla } from "next/font/google";
 
@@ -19,12 +19,7 @@ const Footer = () => {
   return (
     <>
     
-    <footer className=" relative overflow-hidden text-black p-10 bg-[#5e9547] "   style={{
-    backgroundImage: `url(${window.innerWidth < 768 ? footerBg1.src : footerBg.src})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  }}
->  
+    <footer className=" relative overflow-hidden text-black p-10 xs:bg-[url('/footerBg31.png')] md:bg-[url('/footerBg3.png')] bg-cover" >
       <div className="max-w-7xl mx-auto  grid md:grid-cols-4 gap-2 text-center md:text-left">
         {/* Logo & Intro */}
         <div className="ml flex flex-col  items-center justify-center">
@@ -45,7 +40,7 @@ const Footer = () => {
 
         {/* Quick Links */}
         <div className="lg:ml-[4rem]">
-          <h3 className="text-2xl  font-zain   text-green-800">Quick Links</h3>
+          <h3 className="text-3xl  font-zain font-bold  text-green-800">Quick Links</h3>
           <ul className="mt-2 space-y-2">
             <li><Link href="#" className="hover:text-green-800">Home</Link></li>
             <li><Link href="#" className="hover:text-green-800">About Us</Link></li>
@@ -58,7 +53,7 @@ const Footer = () => {
 
         {/* Quick Links */}
         <div className="lg:ml-[3rem]">
-          <h3 className="text-2xl  font-zain text-green-800">More</h3>
+          <h3 className="text-3xl font-bold font-zain text-green-800">More</h3>
           <ul className="mt-2 space-y-2">
             <li><Link href="#" className="hover:text-green-800">Privacy Policy</Link></li>
             <li><Link href="#" className="hover:text-green-800">Help</Link></li>
@@ -72,7 +67,7 @@ const Footer = () => {
 
         {/* Social Media */}
         <div className="">
-          <h3 className="text-3xl lg:relative lg:-left-19 lg:top-10 font-zain font-bold text-black">“Simplifying Health Goals by advice on Healthy 'Food and Lifestyle”</h3>
+          <h3 className="text-3xl lg:relative lg:-left-19 lg:top-10 font-zain font-bold text-green-800">“Simplifying Health Goals by advice on Healthy 'Food and Lifestyle”</h3>
           
         </div>
       </div>
@@ -90,7 +85,7 @@ const Footer = () => {
     
     </footer>
     {/* <Scooter/> */}
-    <div className=" bg-green-900 justify-center text-white  text-center border-t border-gray-700 xs:pt-2 pb-2  xs:text-xs sm:text-xs md:text-sm lg:text-sm">
+    <div className=" bg-[#5ab00a] justify-center text-white  text-center border-t border-gray-700 xs:pt-2 pb-1  xs:text-xs sm:text-xs md:text-sm lg:text-sm">
     © {new Date().getFullYear()} FoodCription. All rights reserved. <span>| Powered by Night Owls</span>
     </div>
 
