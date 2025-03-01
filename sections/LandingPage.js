@@ -50,8 +50,7 @@ const LandingPage = () => {
     return (
         <div className='flex flex-col '>
             <Navbar />
-            <div className='relative min-h-[80vh] md:min-h-[70vh]  lg:min-h-screen text-white  w-full' style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${HeroBg.src})`,backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
-                <div className="absolute inset-0 bg-teal-800/30 z-0"></div>
+            <div className='relative min-h-[90vh] md:min-h-[70vh]  lg:min-h-screen text-white  w-full' style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${HeroBg.src})`,backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
                 <section className=" text-center xs:text-left lg:text-left xs:px-3 lg:px-10  mt-10  py-32 relative z-10">
                     <h1 className="font-extrabold  xs:text-5xl md:text-6xl font-zain text-white">
                     Simplifying<br/> Health Goals by <br/> Offering Healthy Food for you
