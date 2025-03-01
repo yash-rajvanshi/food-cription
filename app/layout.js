@@ -1,15 +1,11 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Zain, Karla, League_Script } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const karla = Karla({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-karla" });
+const leagueScript = League_Script({ subsets: ["latin"], weight: ["400"], variable: "--font-league-script" });
+const zain = Zain({ subsets: ["latin"], weight: ["200","300","400","800", "700","900"], variable: "--font-zain" });
+
 
 export const metadata = {
   title: "Create Next App",
@@ -18,9 +14,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${karla.className} ${zain.variable} ${leagueScript.variable} custom-scrollbar`}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`antialiased`}
       >
         {children}
       </body>

@@ -1,24 +1,41 @@
 @import "tailwindcss";
 
-@theme {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer utilities {
 
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  /* Apply custom scrollbar styles */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+    /* Adjust width */
+  }
 
-@media (prefers-color-scheme: dark) {
-  /* :root { */
-    /* --background: #0a0a0a;
-    --foreground: #ededed;
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #a1a1a1;
+    /* Light gray scrollbar */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #969393;
+    /* Darker on hover */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+    /* Transparent track */
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-} */ 
+
+
+@theme {
+  --font-karla: var(--font-karla), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-script: var(--font-league-script), cursive;
+  --font-zain: var(--font-zain), sans-serif;
+  --breakpoint-xs: 300px;
+  --breakpoint-sm: 375px;
+  --breakpoint-xx: 490px;
+  --breakpoint-md: 768px;
+  --breakpoint-xl: 1000px;
+  --breakpoint-lg: 1200px;
+}
