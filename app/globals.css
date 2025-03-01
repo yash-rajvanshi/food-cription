@@ -5,6 +5,7 @@
   /* Apply custom scrollbar styles */
   .custom-scrollbar::-webkit-scrollbar {
     width: 8px;
+    background: #bbb7b78a;
     /* Adjust width */
   }
 
