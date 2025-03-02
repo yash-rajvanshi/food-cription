@@ -56,7 +56,7 @@ const LandingPage = () => {
                     <h1 className="font-extrabold  xs:text-5xl md:text-6xl font-zain text-[#5ab00a]">
                         Simplifying<br /> Health Goals by <br /> Offering Healthy Food for you
                     </h1>
-                    <h2 className="mb-4 mr-5 md:text-[1.3rem] whitespace-nowrap font-karla font-bold">
+                    <h2 className="mb-4 mr-5 xs:text-[1.2rem] md:text-[1.3rem] whitespace-nowrap font-karla font-bold">
                         "Health is not just the absence of disease, <br />but a state of complete{" "}
                         <motion.span
                             initial={{ opacity: 0 }}

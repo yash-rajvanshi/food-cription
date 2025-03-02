@@ -1,7 +1,7 @@
 import React from 'react'
 import Why1 from "@/assets/images/Why3.jpg"
 
-const How = () => {
+const Why = () => {
   return (
     <div>
       <div className='w-full h-[100vh] relative mb-16 ' style={{ backgroundImage: ` url(${Why1.src})`, backgroundSize: "contain",backgroundPositionX:"right", backgroundRepeat: "no-repeat" }}>
@@ -14,4 +14,4 @@ const How = () => {
   )
 }
 
-export default How
+export default Why
