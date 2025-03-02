@@ -2,7 +2,7 @@ import React from 'react';
 
 const Charge = () => {
   return (
-    <div className="max-w-3xl mx-auto p-8 text-center space-y-6 mb-16 shadow-lg rounded-2xl border border-gray-200">
+    <div className=" mx-auto flex flex-col justify-center p-8 text-center space-y-6 h-[80vh] mb-16 shadow-lg rounded-2xl bg-[url('/Charge.png')] bg-cover bg-center">
       <h1 className="text-3xl md:text-5xl font-bold leading-tight">
         <span className='text-orange-500'>Take Charge</span> of Your Health Today!
       </h1>

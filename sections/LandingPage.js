@@ -54,7 +54,7 @@ const LandingPage = () => {
             <Navbar />
             <div className='relative min-h-[90vh] md:min-h-[70vh]  lg:min-h-screen text-black  w-full' style={{ backgroundImage: ` url(${HeroBg.src})`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
                 <section className=" text-center xs:text-left lg:text-left xs:px-3 lg:px-10  mt-10  py-32 relative z-10">
-                    <h1 className="font-extrabold  xs:text-5xl md:text-6xl font-zain text-[#5ab00a]">
+                    <h1 className="font-extrabold  xs:text-5xl md:text-6xl font-zain text-[#5ab00a]" >
                         Simplifying<br /> Health Goals by <br /> Offering Healthy Food for you
                     </h1>
                     <h2 className="mb-4 mr-5 xs:text-[1rem] md:text-[1.3rem] whitespace-nowrap font-karla font-bold">
