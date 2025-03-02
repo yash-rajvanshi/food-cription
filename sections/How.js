@@ -9,7 +9,7 @@ const How = () => {
         <div className='flex flex-col gap-18 mb-10'>
             <div className='flex flex-col xs:ml-8 xl:ml-28 gap-2 xs:text-3xl text-gray-700 md:text-5xl xl:text-6xl '>
                 <h1 className="xs:text-4xl xl:text-5xl font-bold">
-                    <span className="">FOOD</span>
+                    <span className="text-[#75e113]">FOOD</span>
                     <span className=" relative">CR<sub className='absolute xs:bottom-[0.8rem]  xs:left-[2.6rem] xl:bottom-[0.8rem] xl:left-[3.6rem]  transform -translate-x-1/2'>x</sub>IP</span>
                     <span className="relative">
                         TION

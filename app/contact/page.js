@@ -1,16 +1,9 @@
 "use client";
 import Navbar from '@/components/Navbar';
 import Footer from '@/sections/Footer';
-// import Updates from '@/components/Updates';
 import { ToastContainer, toast } from 'react-toastify';
 import { useState } from "react";
-// import Email from "@/assets/icons/white_mail.png"
-// import Whatsapp from "@/assets/icons/white_WA.png"
-// import Facebook from "@/assets/icons/image.png"
-import Link from 'next/link'
-import Image from 'next/image'
 import footerBg from "@/assets/images/heroBg3.png";
-// import contactBg from "@/assets/images/contactBg3.jpg";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -90,7 +83,6 @@ const ContactPage = () => {
   return (
     <>
       <ToastContainer />
-      {/* <Updates /> */}
       <Navbar />
 
       <div className="min-h-screen mb-16 flex justify-center items-center bg-gradient-to-b from-lime-600 to-emerald-600   p-4" style={{ backgroundImage: `url(${footerBg.src})`,backgroundSize: "cover", backgroundRepeat: "no-repeat" }}>
@@ -160,7 +152,7 @@ const ContactPage = () => {
               </div>
               <button
                 type="submit"
-                className={`w-full p-2 rounded text-white font-bold ${
+                className={`w-full p-2 rounded cursor-pointer text-white font-bold ${
                   isSubmitting ? "bg-gray-500 cursor-not-allowed" : "bg-[#76B947] hover:bg-[#5E9538]"
                 }`}
                 disabled={isSubmitting} // Prevent multiple clicks
@@ -174,16 +166,6 @@ const ContactPage = () => {
             <h2 className="text-lg font-bold text-black">“Simplifying Health Goals by Offering Healthy Food for you”</h2>
             <h2 className="text-lg xs:hidden md:flex font-bold text-black mt-6">Contact Information</h2>
             <p className="mt-2 hover:text-black">Call Us: +91 97196-71243</p>
-            <div className="flex gap-4 mt-2">
-              <div className='uppercase sm:text-xs gap-4 flex'>
-                {/* <Link href="mailto:greenheavenacademy2011@gmail.com"><Image src={Email} alt='email' width={30} height={30} /></Link>
-                <Link href="https://wa.me/919058695869" target="_blank" rel="noopener noreferrer">
-                  <Image src={Whatsapp} alt='email' width={30} height={30} />
-                </Link>
-                <Link href="https://www.facebook.com/Education.temple.G.H.E.Academy/" target='_blank' className="hover:text-blue-500"><Image src={Facebook} alt='email' width={30} height={30} /></Link> */}
-
-              </div>
-            </div>
           </div>
           
         </div>

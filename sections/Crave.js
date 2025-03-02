@@ -7,7 +7,7 @@ const Crave = () => {
                     Beat The Cravings, Eat Right, Feel Amazing
             </div>
             <p className='w-[90vw] xl:w-[50vw] text-2xl xl:text-3xl'>
-                One of the biggest challenges we all face is midnight cravings—that urge to grab something unhealthy late at night.With FoodCription, you no longer have to rely on instant noodles, fast food, or sugary snacks.Our thoughtfully curated meal options ensure you always have <b b > a healthy, delicious alternative</b> ready to go.
+                One of the biggest challenges we all face is midnight cravings—that urge to grab something unhealthy late at night.With FoodCription, you no longer have to rely on instant noodles, fast food, or sugary snacks.Our thoughtfully curated meal options ensure you always have <b> a healthy, delicious alternative</b> ready to go.
             </p>
 
 

@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import HeroBg from "@/assets/images/heroBg4.jpg"
 import LandingArrow from "@/assets/icons/arrow.jpg"
+import Link from 'next/link';
 
 const keywords = [
     { title: "physical well-being." },
@@ -71,7 +72,7 @@ const LandingPage = () => {
                     <h3 className="font-light text-[#5ab00a]">-World Health Organization</h3>
                     <div className="flex flex-row z-10 mt-6">
                     <div className="xs:px-4 md:px-10 py-3 text-center text-xl bg-[#6de0019f] cursor-pointer uppercase text-black font-medium rounded-lg font-zain  shadow-lg">
-                        Foodcription
+                        <Link href="/contact">Foodcription</Link>
                     </div>
                     <div className="flex w-full relative">
                         <Image src={LandingArrow} alt="arrow" width={50} height={50} className="w-20" />
