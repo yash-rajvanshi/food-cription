@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import HeroBg from "@/assets/images/heroBg4.jpg"
-import LandingArrow from "@/assets/icons/arrow.jpg"
+import LandingArrow from "@/assets/icons/arrow.JPG"
 import Link from 'next/link';
 
 const keywords = [
