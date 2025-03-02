@@ -30,7 +30,7 @@ const Why = () => {
     <div>
       <h1 className="text-[#5ab00a]  text-center font-zain xs:text-5xl  md:text-7xl ">Why FoodCription?</h1>
       <div
-        className="w-full xx:leading-[1.7rem] sm:leading-[1.4rem]  h-[100vh] xs:text-[15px] xx:text-[20px] relative mb-16" style={{backgroundImage: url(${bgImage}),backgroundSize: "contain",backgroundPositionX: "right",backgroundRepeat: "no-repeat"}}>
+        className="w-full xx:leading-[1.7rem] sm:leading-[1.4rem]  h-[100vh] xs:text-[15px] xx:text-[20px] relative mb-16" style={{backgroundImage: `url(${bgImage})`,backgroundSize: "contain",backgroundPositionX: "right",backgroundRepeat: "no-repeat",}}>
         
         <div className="flex flex-col items-center absolute xs:right-[36%] sm:right-[41%] xx:right-[35%] md:right-[35%]  xs:top-[10%] md:top-[6%] right-[15rem] top-[10%] font-zain ">
           <h3 className="font-bold xs:text-[14px] sm:text-[18px] xx:text-[23px] md:text-[30px] ">Healthy, delicious, and convenient</h3>
@@ -38,7 +38,7 @@ const Why = () => {
         </div>
 
         <div className="flex flex-col items-center absolute xs:right-[36%] sm:right-[41%] xx:right-[44%] md:right-[44%] xs:top-[33%] md:top-[32%] right-[20rem] top-[15rem] font-zain">
-          <h3 className="font-bold xs:text-[14px] sm:text-[18px] xx:text-[23px] md:text-[30px]">Personalized for your body’s needs</h3>
+          <h3 className="font-bold xs:text-[14px] sm:text-[18px] xx:text-[23px] md:text-[30px]">Personalized for your body's needs</h3>
           <p>Because no two people are the same.</p>
         </div>
 
