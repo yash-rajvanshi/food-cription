@@ -14,7 +14,6 @@ const Footer = () => {
     
     <footer className=" relative overflow-hidden text-black p-10 xs:bg-[url('/footerBg31.PNG')] md:bg-[url('/footerBg3.png')] bg-cover" >
       <div className="max-w-7xl mx-auto  grid md:grid-cols-4 gap-2 text-center md:text-left">
-        {/* Logo & Intro */}
         <div className="ml flex flex-col  items-center justify-center">
           <Image  src={Logo} alt="back" width={200} height={10} className=""/>
           <p className="xs:text-xl  lg:text-justify mt-2 font-zain">
