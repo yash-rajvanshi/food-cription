@@ -38,7 +38,7 @@ const Why = () => {
         </div>
 
         <div className="flex flex-col items-center absolute xs:right-[36%] sm:right-[41%] xx:right-[44%] md:right-[44%] xs:top-[33%] md:top-[32%] right-[20rem] top-[15rem] font-zain">
-          <h3 className="font-bold xs:text-[14px] sm:text-[18px] xx:text-[23px] md:text-[30px]">Personalized for your body’s needs</h3>
+          <h3 className="font-bold xs:text-[14px] sm:text-[18px] xx:text-[23px] md:text-[30px]">Personalized for your body's needs</h3>
           <p>Because no two people are the same.</p>
         </div>
 
