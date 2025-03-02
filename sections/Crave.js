@@ -4,12 +4,9 @@ import Image from 'next/image'
 const Crave = () => {
     return (
         <div className='flex items-center mb-16 h-[90vh]'style={{ backgroundImage: ` url(${CraveBg.src})`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }} >
-
-            {/* <Image src={CraveBg} alt='img' width={200} height={200} className='absolute bottom-0 -left-10' /> */}
-
             <div>
-                <div className='w-[30rem] absolute left-[20rem] z-50 h-[30rem] bg-white shadow-[0px_0px_6px_1px_rgba(0,_0,_0,_0.1)] rounded-full'>
-                    <div className='text-4xl flex relative'>
+                <div className='w-[30rem]  absolute left-[20rem] z-50 h-[30rem] bg-white shadow-[0px_0px_6px_1px_rgba(0,_0,_0,_0.1)] rounded-full'>
+                    <div className='text-5xl px-2 text-[#5ab001] font-zain flex relative'>
                         <div className='absolute left-[4rem] top-20'>Beat The Cravings,</div>
                         <div className='absolute left-[10rem] top-30'>Eat Right,</div>
                         <div className='absolute left-[15rem] top-40'>Feel Amazing</div>

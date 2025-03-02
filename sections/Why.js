@@ -26,6 +26,7 @@ const Why = () => {
     return () => window.removeEventListener("resize", updateBackground); // Cleanup
   }, []);
 
+
   return (
     <div>
       <h1 className="text-[#5ab00a]  text-center font-zain xs:text-3xl  md:text-5xl ">Why FoodCription?</h1>
@@ -56,4 +57,4 @@ const Why = () => {
   );
 };
 
-export default How
+export default Why
