@@ -1,11 +1,9 @@
 import React from 'react'
-// import CraveBg from "@/assets/images/CraveBg.jpg"
-// import CraveBg1 from "@/assets/images/CraveBg.jpg"
-// import Image from 'next/image'
+
 const Crave = () => {
     return (
-        <div className='flex flex-col gap-4 lg:gap-10 font-zain xl:justify-center xs:bg-[url("/CraveBg1.jpg")] xl:bg-[url("/CraveBg.jpg")] xs:px-4 xl:px-20 mb-16 xs:h-[100vh] xl:h-[90vh] bg-cover bg-no-repeat bg-center' >
-            <div className='text-3xl xs:py-10 xl:py-0 xl:text-5xl text-[#5ab001]'>
+        <div className='flex flex-col gap-4 lg:gap-10 font-zain md:justify-center xs:bg-[url("/CraveBg1.jpg")] xl:bg-[url("/CraveBg.jpg")] xs:px-4 xl:px-20 mb-16 xs:h-[100vh] sm:h-[90vh] md:h-[70vh] xl:h-[90vh] bg-cover bg-no-repeat bg-center' >
+            <div className='text-3xl xs:py-10 sm:py-15 xl:py-0 xl:text-5xl text-[#5ab001]'>
                     Beat The Cravings, Eat Right, Feel Amazing
             </div>
             <p className='w-[90vw] xl:w-[50vw] text-2xl xl:text-3xl'>
