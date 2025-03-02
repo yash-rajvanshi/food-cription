@@ -1,25 +1,18 @@
 "use client"
 import React from "react";
 import Image from "next/image";
-// import { FaFacebook, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
-// import { motion } from 'framer-motion';
-// import Scooter from "@/assets/images/footer-scooter.svg"
 import Logo from "@/assets/icons/thinLogo.png"
 import Play from "@/assets/icons/playStore.png"
 import Apple from "@/assets/icons/appStore.png"
-// import Rx from "@/assets/images/rxGold.svg"
-// import footerBg from "@/assets/images/footerBg3.png";
-// import footerBg1 from "@/assets/images/footerBg31.png";
 
-// import { Karla } from "next/font/google";
 
 
 const Footer = () => {
   return (
     <>
     
-    <footer className=" relative overflow-hidden text-black p-10 xs:bg-[url('/footerBg31.png')] md:bg-[url('/footerBg3.png')] bg-cover" >
+    <footer className=" relative overflow-hidden text-black p-10 xs:bg-[url('/footerBg31.PNG')] md:bg-[url('/footerBg3.png')] bg-cover" >
       <div className="max-w-7xl mx-auto  grid md:grid-cols-4 gap-2 text-center md:text-left">
         {/* Logo & Intro */}
         <div className="ml flex flex-col  items-center justify-center">
@@ -72,19 +65,9 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Copyright */}
-    
-      {/* <motion.div
-        initial={{ x: '100vw' }}
-        animate={{ x: '0vw' }}
-        transition={{ repeat: Infinity, repeatType: "loop", duration: 5, eease: "linear" } }
-        className="absolute  bottom-0 left-0 w-auto h-[180px] "
-      >
-        <img src="/footer-scooter.svg" alt="Moving Image" className="w-[auto] h-[200px] object-cover" />
-      </motion.div> */}
+
     
     </footer>
-    {/* <Scooter/> */}
     <div className=" bg-[#5ab00a] justify-center text-white  text-center border-t border-gray-700 xs:pt-2 pb-1  xs:text-xs sm:text-xs md:text-sm lg:text-sm">
     © {new Date().getFullYear()} FoodCription. All rights reserved. <span>| Powered by Night Owls</span>
     </div>
