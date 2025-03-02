@@ -5,6 +5,7 @@ import Welcome from '@/sections/Welcome'
 import Why from '@/sections/Why'
 import How from '@/sections/How'
 import Crave from '@/sections/Crave'
+import Charge from "@/sections/Charge"
 const HomePage = () => {
   return (
     <div>
@@ -13,6 +14,7 @@ const HomePage = () => {
       <How/>
       <Crave/>
       <Why/>
+      <Charge/>
       <Footer/>
     </div>
   )
