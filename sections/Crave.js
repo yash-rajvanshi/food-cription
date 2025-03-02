@@ -1,6 +1,6 @@
 import React from 'react'
 import CraveBg from "@/assets/images/Contact14.png"
-import CraveBg1 from "@/assets/images/CraveBg.jpg"
+// import CraveBg1 from "@/assets/images/CraveBg.jpg"
 // import Image from 'next/image'
 const Crave = () => {
     return (
@@ -16,7 +16,7 @@ const Crave = () => {
                         One of the biggest challenges we all face is midnight cravings—that urge to grab something unhealthy late at night. With FoodCription, you no longer have to rely on instant noodles, fast food, or sugary snacks. Our thoughtfully curated meal options ensure you always have <b>a healthy, delicious alternative</b> ready to go.
                     </div>
                 </div>
-                <div className='w-[30rem] relative left-[30rem] z-10 h-[30rem]  rounded-full'style={{ backgroundImage: ` url(${CraveBg1.src})`, backgroundSize: "cover", backgroundRepeat: "no-repeat" }} ></div>
+                <div className='w-[30rem] relative left-[30rem] z-10 h-[30rem]  rounded-full' ></div>
 
             </div>
 
