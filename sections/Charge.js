@@ -8,7 +8,7 @@ const Charge = () => {
       </h1>
       <p className="text-lg md:text-3xl text-gray-700 font-zain">
         Say goodbye to unhealthy eating habits and hello to a healthier, happier you. 
-        Subscribe to FoodCription now and start eating according to what your body truly needs!
+        <span className='text-[#5AB008] font-bold'> Subscribe to FoodCription</span> now and start eating according to what your body truly needs!
       </p>
       <h2 className="text-2xl md:text-4xl font-semibold">
         <span className='text-[#5AB008]'>FoodCription</span> – Because Eating Right Should Be Easy.
