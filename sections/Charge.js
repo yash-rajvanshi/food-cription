@@ -2,9 +2,9 @@ import React from 'react';
 
 const Charge = () => {
   return (
-    <div className="max-w-3xl mx-auto p-6 text-center space-y-6 mb-16">
+    <div className="max-w-3xl mx-auto p-8 text-center space-y-6 mb-16 shadow-lg rounded-2xl border border-gray-200">
       <h1 className="text-3xl md:text-5xl font-bold leading-tight">
-         <span className='text-orange-500'>Take Charge</span> of Your Health Today!
+        <span className='text-orange-500'>Take Charge</span> of Your Health Today!
       </h1>
       <p className="text-lg md:text-3xl text-gray-700 font-zain">
         Say goodbye to unhealthy eating habits and hello to a healthier, happier you. 
@@ -18,4 +18,3 @@ const Charge = () => {
 };
 
 export default Charge;
-
